@@ -391,11 +391,8 @@ public abstract class AbstractPlay2Mojo extends AbstractMojo {
         for (Map.Entry<Object, Object> entry : play2SystemProperties.entrySet()) {
             args.add(String.format(PLAY2_ARG_FORMAT, entry.getKey(), entry.getValue()));
         }
-        getLog().debug("args 1" + " = " + args);
         addProxiesSystemProperties(args);
-        getLog().debug("args 2" + " = " + args);
         appendCurrentSystemProperties(args);
-        getLog().debug("args 3" + " = " + args);
 
         return args.toArray(new String[0]);
     }
