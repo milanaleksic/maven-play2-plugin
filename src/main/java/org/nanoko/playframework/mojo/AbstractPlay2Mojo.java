@@ -96,6 +96,8 @@ public abstract class AbstractPlay2Mojo extends AbstractMojo {
             "socksNonProxyHosts",
             "ftp.nonProxyHosts",
             "sun.cpu.isalist",
+            "user.variant",
+            "user.script",
             // List related to Maven source
             "maven.home",
             "guice.disable.misplaced.annotation.check",
